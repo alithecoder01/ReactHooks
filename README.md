@@ -9,4 +9,5 @@ npm create vite@latest ./
 npm run dev
 ```
 
-1. UseState Exercise [Code](./src/component/State.jsx)
+### 1. UseState Exercise [Code](./src/component/State.jsx)
+### 2. UseReducer Exercise [Code](./src/component/Reduser.jsx)

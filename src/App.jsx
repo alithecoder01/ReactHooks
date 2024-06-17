@@ -1,3 +1,4 @@
+import { Reducer } from "./component/Reducer";
 import State from "./component/State";
 
 export default function App(){
@@ -5,6 +6,7 @@ export default function App(){
         <div>
             <State/>
             <hr />
+            <Reducer/>
         </div>
     )
 }
