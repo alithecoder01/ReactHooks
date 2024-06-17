@@ -2,14 +2,10 @@ import { useReducer } from "react";
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case "Increment":
-      return { count: state.count + 1, showText: state.showText };
-
-    case "ShowText":
-      return { count: state.count, showText: !state.showText };
-
+    case "IncrementAndDisplay":
+      return { count: state.count + 1, showText: (state.showText=true) };
     default:
-        state;
+      state;
   }
 };
 
@@ -18,15 +14,17 @@ export function Reducer() {
 
   return (
     <div className="IncremenDisplay">
-        <h1>UseReducer Ex</h1>
+      <h1>UseReducer Ex</h1>
       <div className="count">
-        {state.count}
+        {state.showText && <p>Count is : {state.count}</p>}
         <br />
-        <button onClick={()=>{
-            dispatch({type:"Increment"})
-            dispatch({type:"ShowText"})
-        }}>Increment & Display</button>
-        {state.showText && <p>Text is Shown</p>}
+        <button
+          onClick={() => {
+            dispatch({ type: "IncrementAndDisplay" });
+          }}
+        >
+          Increment & Display
+        </button>
       </div>
     </div>
   );
