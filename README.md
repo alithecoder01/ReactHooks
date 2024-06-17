@@ -8,3 +8,5 @@ npm create vite@latest ./
 ```
 npm run dev
 ```
+
+1. UseState Exercise[./State.jsx]
