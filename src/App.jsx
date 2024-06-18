@@ -3,6 +3,7 @@ import { LayoutEffect } from "./component/LayoutEffect";
 import { Reducer } from "./component/Reducer";
 import { Ref } from "./component/Ref";
 import State from "./component/State";
+import { Context } from "./component/useContext/Context";
 
 export default function App() {
   return (
@@ -21,6 +22,9 @@ export default function App() {
       <hr />
       {/* useLayoutEffect Ex */}
       <LayoutEffect/>
+      <hr />
+      {/* useContext Ex */}
+      <Context/>
     </div>
   );
 }

@@ -14,3 +14,4 @@ npm run dev
 ### 3. UseEffect Exercise [Code](./src/component/Effect.jsx)
 ### 4. UseRef Exercise [Code](./src/component/Ref.jsx)
 ### 5. UseLayoutEffect Exercise [Code](./src/component/LayoutEffect.jsx)
+### 5. UseContext Exercise [Code](./src/component/useContext/Context.jsx)
