@@ -4,6 +4,7 @@ import { Reducer } from "./component/Reducer";
 import { Ref } from "./component/Ref";
 import State from "./component/State";
 import { Context } from "./component/useContext/Context";
+import { Zustand } from "./stateManagement/zustand";
 
 export default function App() {
   return (
@@ -25,6 +26,9 @@ export default function App() {
       <hr />
       {/* useContext Ex */}
       <Context/>
+      <hr />
+      {/* zustand Ex*/}
+      <Zustand/>
     </div>
   );
 }
